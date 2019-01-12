@@ -1,0 +1,45 @@
+ul.albums img{
+    width: 170px;
+    height: 170px;
+}
+ul.albums img:hover :after{
+    content: "11";
+}
+ul.albums li{
+    float: left;
+    margin: 8px;
+}
+
+ul.albums li  p{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 170px;
+    margin-top: 10px;
+}
+h3.loading{
+    clear: both;
+}
+.songs_list.clearfix{
+    width: 110%;
+}
+.div_top{
+    z-index: 1000;
+    position: absolute;
+    width: 172px;
+    height: 172px;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    background: grey;
+}
+.div_top a span{
+    font:  36px "microsoft yahei";
+    color: white;
+}
+.div_top a{
+    position: absolute;
+    z-index: 100;
+    left: 38%;
+    top: 35%;
+}

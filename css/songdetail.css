@@ -1,0 +1,190 @@
+.my_container{
+    padding: 20px 20px;
+}
+.song_base{
+
+    width: 15%;
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+    height: auto;
+    display: block;
+    position: fixed;
+}
+.song_word_operate{
+    color: #ff5722;
+}
+.layui-code{
+    position: relative;
+    margin: 10px 0;
+    padding: 15px;
+    line-height: 20px;
+     border: none;
+    border-left-width: 6px;
+     background-color: white;
+    color: #333;
+    font-family: Courier New;
+    font-size: 12px;
+}
+.song_other{
+    padding: 20px 10px;
+    margin-left: 28%;
+    width: 72%;
+    height: auto;
+    margin-right: 2%;
+}
+.song_other .singer_logo{
+    width: 25px;
+}
+.song_base img{
+    width: 205px;
+    height: 205px;
+    margin: 30px 40px 10px;
+}
+
+.song_base table{
+    margin-left: 40px;
+    border-collapse: collapse;
+    line-height: 32px;
+}
+.song_base table tr td:first-child{
+    font: bold 15px "microsoft yahei";
+}
+.song_base table tr span{
+    padding: 10px;
+}
+.song_base table tr td{
+    text-align: center;
+}
+ul.song_base_msg li i{
+    color: #ff5722;
+    font-size: 20px;
+    margin-right: 5px;
+}
+ul.song_base_msg li{
+    margin-bottom: 20px;
+}
+ul.song_base_msg .singer_name a{
+    font-size: 16px;
+    font-weight: 300;
+}
+ul.song_base_msg .song_name{
+    font: bold 20px "microsoft yahei";
+}
+ul.song_operate{
+    margin-top: 30px;
+}
+ul.song_operate li button{
+    line-height: 38px;
+    text-align: center;
+    width: 120px;
+}
+ul.song_operate li .layui-btn-primary:hover{
+    border: 1px solid #b9b4b4;
+}
+ul.song_operate li .layui-btn-primary{
+    background: #b9b4b4;
+    color: white;
+}
+ul.song_operate li{
+    float: left;
+    margin-right: 10px;
+}
+ul.song_operate:after{
+    content: "";
+    display: block;
+    height: 30px;
+}
+.song_other .song_words{
+    margin-top: 30px;
+    clear: both;
+}
+
+.song_other .song_words h2{
+    font:  23px "microsoft yahei";
+    margin-bottom: 15px;
+}
+pre.song_content{
+    display: none;
+}
+div.comment_area h2{
+    margin-top: 20px;
+    font:  23px "microsoft yahei";
+}
+.user_img{
+    width: 50px;
+    float: left;
+    zoom: 1;
+    overflow: hidden;
+    height: 50px;
+    margin-right: 2%;
+    border-radius: 50%;
+}
+div.write_area .text-area{
+    overflow: auto;
+    line-height: 24px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    display: block;
+    resize: none;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100px;
+}
+span.song_tag span {
+    margin-right: 10px;
+}
+div.write_area {
+    padding: 20px 0px 35px;
+}
+button.comment_btn{
+    float: right;
+    margin: 10px 12% 0px 0px;
+}
+div.show_comments{
+    clear: both
+}
+div.show_comments h3{
+    font:  17px sans-serif;
+}
+
+div.show_comments ul li ul li{
+    border-bottom: none;
+}
+div.show_comments ul li{
+    padding: 0px 0px 20px 0px;
+    margin: 3% 0px;
+    border-bottom: 1px solid #ececec;
+}
+div.show_comments span{
+    margin-right: 2%;
+}
+div.show_comments .comment_detail{
+    margin-left: 10%;
+}
+.my_container{
+    margin-top: 0 !important;
+}
+.comment_detail .comment_open{
+    color: #ff5722;
+}
+.layui-icon-triangle-d{
+    transform: rotateY(270deg);
+}
+ul.inner_ul {
+    box-shadow: #e4e3e3 0px 2px 2px 2px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+ul.inner_ul li{
+    padding: 0px 0px 0px 10px !important;
+}
+h3.loading{
+    text-align: center;
+}
+h3.loading a{
+    color: grey;
+    font: bold 16px "microsoft yahei";
+}

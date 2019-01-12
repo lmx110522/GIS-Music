@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>光年之外——GIS音乐盒</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/base.js" type="text/javascript"></script>
+    <script src="js/songdetail.js" type="text/javascript"></script>
+    <script src="js/textarea.js" type="text/javascript"></script>
+    <script src="./layui/layui.js"></script>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/collect.css">
+    <link rel="stylesheet" href="./css/songdetail.css">
+    <script src="./js/drag.js"></script>
+    <link rel="stylesheet" href="./css/unlock.css">
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=BRoOowBuHdn03Grf8wNLnFP1L52SLZ1L"></script>
+</head>
+<body>
+<nav id="my_nav">
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-row">
+                <div class="layui-col-md5">
+                    <ul class="base_msg">
+                        <li><span class="layui-icon location_icon layui-icon-location nav_word"></span><span class="nav_word" id="baidu_geo">地址获取中...</span></li>
+                        <li><span><a href="index.html" class="nav_word">Hi,欢迎来到GIS音乐盒</a></span></li>
+                        <li>
+                            <span><a href="#" class="nav_word open_login_page">登录</a></span>
+                            <span><a href="#"class="nav_word open_login_page">免费注册</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-col-md7">
+                    <ul class="main_msg">
+                        <li title="版主联系" class="nav_word"><span class="layui-icon cellphone_icon layui-icon-cellphone"></span>13193801071</li>
+                        <li><span class="nav_word"><i class="layui-icon layui-icon-dialogue"></i><a href="#">在线客服</a></span></li>
+                        <li><span class="nav_word"><i class="layui-icon layui-icon-username"></i><a href="#">我的主页</a></span></li>
+                        <li><span class="nav_word"><i class="layui-icon layui-icon-star-fill"></i><a href="#">我的收藏</a></span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="layui-container my_container">
+        <div class="song_base">
+            <div class="main_msg">
+                <img src="img/gnzw.jpg">
+                <table>
+                    <tr><td><span>歌手：</span></td> <td><a href="#">G.E.M.邓紫棋</a></td></tr>
+                    <tr><td><span>所属专辑：</span></td> <td><a href="#">光年之外</a></td></tr>
+                    <tr><td><span>播放次数：</span></td> <td><a href="#" style="color: red">12000</a>次</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="song_other">
+            <ul class="song_base_msg">
+                <li>
+                    <i class="layui-icon layui-icon-friends"></i><span class="singer_name"><a href="#">G.E.M.邓紫棋</a></span>
+                </li>
+                <li>
+                    <span class="song_name"><h1>光年之外</h1></span>
+                </li>
+                <li>
+                   <span class="song_tag">
+                        <span class="layui-badge layui-bg-orange">激昂</span>
+                        <span class="layui-badge layui-bg-orange">开心</span>
+                        <span class="layui-badge layui-bg-orange">励志</span>
+                        <span class="layui-badge layui-bg-orange">探索</span>
+                    </span>
+                </li>
+            </ul>
+            <ul class="song_operate">
+                <li><button class="layui-btn layui-btn-radius layui-btn-danger"><i class="layui-icon layui-icon-triangle-r"></i>立即播放</button></li>
+                <li><button class="layui-btn layui-btn-radius layui-btn-primary"><i class="layui-icon layui-icon-praise"></i>420</button></li>
+                <li><button class="layui-btn layui-btn-radius layui-btn-primary"><i class="layui-icon layui-icon-star"></i>收藏</button></li>
+            </ul>
+            <div class="song_words">
+                <h2>歌词</h2>
+                <a class="song_word_operate song_word_open" href="#">展开歌词 <i class="layui-icon layui-icon-down"></i></a>
+                <pre class="song_content layui-code">
+yo 我是艾热 所以热爱
+
+我为爱而生 我为爱而活
+
+我路过 了落寞
+
+被数落 孤独过
+
+吐露过 不服的抱紧自我印象深刻
+
+疏忽过 当幸福靠近却没把握住
+
+我 诉说的更多反而更多困惑更想沉默
+
+你用爱 融化掉
+
+我浮躁 的心跳
+
+因为有 善良的心灵伴着美丽样貌
+
+因为你独一无二做你自己从不仿照
+
+激起我内心浪潮就算开始我真的没想到
+
+为了你我能疯狂到
+
+山崩海啸没有你根本不想逃
+
+我的大脑为了你已经疯狂到
+
+脉搏心跳没有你根本不重要
+
+我渴望能够触碰到你最真实的感受
+
+哪怕爱对于太多人来说像沙漠山丘
+
+别担忧 我会用最耐心的姿态拥抱你
+
+保护你照顾你到永远不论任何关头
+
+Oh 多少爱情都 根本 抵不过时间的洪流
+
+都 多么轰烈却 根本 只不过曾经的拥有
+
+对你我却那么坚定 为你奋不顾身前进
+
+我想要 追随你为了你我愿意放弃我所有的骄傲与浮躁只为让
+
+你看到 我有多在乎你伴着你会是我最美的憧憬很透明别否定我
+
+都关于你和我
+
+就算曾避和躲
+
+不愿挽彼此胳膊
+
+宁愿内心受折磨
+
+不愿妥协互相伤害接着后悔
+
+就算猜疑徘徊在我们的周围
+
+为了你我能疯狂到
+
+山崩海啸没有你根本不想逃
+
+我的大脑为了你已经疯狂到
+
+脉搏心跳没有你根本不重要
+
+文字在深思中粉饰跟你的点滴 很真实
+
+真挚也诚实让你我沉迷于甜言蜜语
+
+爱的记号像气泡激荡像心跳加速跳跃
+
+星空再耀眼没有你光芒也都千篇一律
+
+内心也漆黑过 遗忘了我们经历第几回
+
+以为很理解痛 苦到身心具疲
+
+备忘录里为你积累着希望、爱慕
+
+只想你别理会
+
+愚蠢非议因为你我一直都在相依偎
+
+都关于你和我
+
+就算曾避和躲
+
+不愿挽彼此胳膊
+
+宁愿内心受折磨
+
+我哭过
+
+至少为你用力握住过
+
+都关于你和我
+
+就算曾避和躲
+
+不愿挽彼此胳膊
+
+宁愿内心受折磨
+
+却不过
+
+再累也为你满血复活
+
+我没想到为了你我能疯狂到
+
+山崩海啸没有你根本不想逃
+
+我的大脑为了你已经疯狂到
+
+脉搏心跳没有你根本不重要
+
+我说我想要霸占你的心因为真的想要
+
+他们想打乱我笃定步伐但爱无法仿造
+
+如果有起跑线为你 我毫不犹豫抢跑
+
+你是我内心浪潮就算开始我没想到
+
+
+                </pre>
+            </div>
+            <div class="comment_area">
+                <h2>评论</h2>
+                <div class="write_area">
+                    <img class="user_img" src="img/ljj.png">
+                    <textarea maxlength="300" class="text-area" placeholder="我来说两句..."></textarea>
+                    <button class="layui-btn comment_btn layui-btn-radius layui-btn-disabled">评论</button>
+                </div>
+            </div>
+            <div class="show_comments">
+                <h3>热门评论<span style="margin-left: 10px">6</span></h3>
+                <ul class="comment_one">
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                <span><a href="#" class="comment_open"><b>展开</b></a></span>
+                            </span>
+                            <ul class="inner_ul">
+                                <li>
+                                    <img class="user_img" src="img/ljj.png">
+                                    <div class="comment_detail">
+                                        <span>李沫熙</span>
+                                        <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                                        <span>
+                                        <span>2018-12-25 08:12:23</span>
+                                        <span><a href="#">回复</a></span>
+                                        <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="user_img" src="img/ljj.png">
+                                    <div class="comment_detail">
+                                        <span>李沫熙</span>
+                                        <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                                        <span>
+                                        <span>2018-12-25 08:12:23</span>
+                                        <span><a href="#">回复</a></span>
+                                        <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="user_img" src="img/ljj.png">
+                                    <div class="comment_detail">
+                                        <span>李沫熙</span>
+                                        <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                                        <span>
+                                        <span>2018-12-25 08:12:23</span>
+                                        <span><a href="#">回复</a></span>
+                                        <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="write_area">
+                                <img class="user_img" src="img/ljj.png">
+                                <textarea maxlength="300" class="text-area" placeholder="我来说两句..."></textarea>
+                                <button class="layui-btn comment_btn layui-btn-radius layui-btn-disabled">评论</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <h3>最新评论<span style="margin-left: 10px">22</span></h3>
+                <ul class="comment_one">
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                <span><a href="#" class="comment_open"><b>展开</b></a></span>
+                            </span>
+                            <ul class="inner_ul">
+                                <li>
+                                    <img class="user_img" src="img/ljj.png">
+                                    <div class="comment_detail">
+                                        <span>李沫熙</span>
+                                        <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                                        <span>
+                                        <span>2018-12-25 08:12:23</span>
+                                        <span><a href="#">回复</a></span>
+                                        <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="user_img" src="img/ljj.png">
+                                    <div class="comment_detail">
+                                        <span>李沫熙</span>
+                                        <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                                        <span>
+                                        <span>2018-12-25 08:12:23</span>
+                                        <span><a href="#">回复</a></span>
+                                        <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="user_img" src="img/ljj.png">
+                                    <div class="comment_detail">
+                                        <span>李沫熙</span>
+                                        <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                                        <span>
+                                        <span>2018-12-25 08:12:23</span>
+                                        <span><a href="#">回复</a></span>
+                                        <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="write_area">
+                                <img class="user_img" src="img/ljj.png">
+                                <textarea maxlength="300" class="text-area" placeholder="我来说两句..."></textarea>
+                                <button class="layui-btn comment_btn layui-btn-radius layui-btn-disabled">评论</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="user_img" src="img/ljj.png">
+                        <div class="comment_detail">
+                            <span>李沫熙</span><span class="layui-badge layui-bg-blue">热门</span>
+                            <pre class="layui-code comment_content">
+抒情与嘻哈的碰撞真的是让这首歌改头换面了
+
+完全不一样的情感传递，非常非常燃
+
+在音乐世界里有一句话真的非常适用——“所爱隔山海，山海皆可平”
+
+只有邓紫棋最了解邓紫棋的作品
+                            </pre>
+                            <span>
+                                <span>2018-12-25 08:12:23</span>
+                                <span><a href="#">回复</a></span>
+                                <span><a href="#">点赞 <b class="thumbs_nums">12</b></a></span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="loading"><a href="#"><i class="layui-icon layui-icon-refresh-1"></i>加载更多</a></h3>
+        </div>
+    </div>
+</section>
+<div class="tool-bar">
+    <div class="tool-bar-menu">
+        <a href="#"><i class="layui-icon layui-icon-star aside_icon"></i><span>我的收藏<em></em></span></a>
+        <a href="#"><i class="layui-icon layui-icon-align-center aside_icon"></i><span>全部音乐<em></em></span></a>
+        <a href="#"><i class="layui-icon layui-icon-login-wechat aside_icon"></i><span><img src="./img/wx.png"></span></a>
+        <a href="#"><i class="layui-icon layui-icon-login-qq aside_icon"></i><span><img src="./img/qq.png"><em></em></span></a>
+    </div>
+    <a href="javascript:;" class="scroll-to-top" style="display: block;"><i class="layui-icon layui-icon-up"></i><span>回到顶部<em></em></span></a>
+</div>
+<div class="my_collect">
+    <h2>收藏歌曲</h2>
+    <ul id="collect_ul">
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/gnzw.jpg"></a>
+            <div>
+                <p><a href="#">邓紫棋</a></p>
+                <p><a href="#">光年之外</a></p>
+            </div>
+        </li>
+
+
+    </ul>
+    <button class="layui-btn click_collect layui-btn-fluid">查看更多我的收藏</button>
+</div>
+<div class="login_page">
+    <div class="bottom_page">
+    </div>
+    <div class="close_btn"><a href="#"><i class="layui-icon layui-icon-close"></i></a></div>
+    <div class="top_page">
+        <img id="login_bg" src="img/login1.gif">
+        <img id="logo" src="img/logo2.png">
+        <div class="layui-tab">
+            <ul class="layui-tab-title">
+                <li class="layui-this tab_li">普通登录</li>
+                <li class="tab_li">短信登录</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="手机号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">密码</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="title" required  lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item bar3 bar"></div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn submit_btn1  layui-btn-radius layui-btn-disabled  layui-btn-fluid">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="layui-tab-item">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required  lay-verify="required" placeholder="手机号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">验证码</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="code" required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux"><a href="#">获取验证码</a></div>
+                        </div>
+                        <div class="layui-form-item bar3 bar"></div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn submit_btn1 layui-btn-radius layui-btn-disabled  layui-btn-fluid">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="notice_item">
+            <ul>
+                <li>
+                    <i class="layui-icon layui-icon-chat"></i>没有注册的手机号请选择短信登录，登录同时会注册
+                </li>
+                <li>
+                    <i class="layui-icon layui-icon-chat"></i>初始密码是你的短信验证码
+                </li>
+                <li>
+                    <i class="layui-icon layui-icon-chat"></i>建议为了安全首次登录成功及时修改密码
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="footer my_footer">
+  <p style="text-align: center">Copyright &copy; 2018.南阳理工学院汇森5楼GIS工作室版权 <a style="color:#2f85fc" href="http://www.nyist.edu.cn/" target="_blank" title="南阳理工学院">南阳理工学院</a></p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+#my_header .layui-container{
+    height: 35px;
+    width: 100%;
+    margin-top: 30px;
+    background: orangered;
+}
+#my_header .layui-container h3{
+    font: bold 18px "Ink Free";
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+.my_container{
+    border: 1px solid  #e0e0e0;
+    padding: 10px 30px;
+    margin-top: 0 !important;
+}
+.my_container .singer_name{
+    font: bold 23px "Microsoft YaHei";
+    margin-bottom: 10px;
+}
+.my_container #singer_pic{
+    width: 640px;
+    height: 300px;
+    border: 1px solid #e0e0e0;
+}
+.my_container .main_singer{
+    width: 58%;
+    float: left;
+    zoom: 1;
+}
+.my_footer{
+    clear: both;
+}
+table{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+}
+.song_one> li{
+    margin: 20px 20px 20px 0px;
+}
+.song_one ul li{
+
+    float: left;
+    margin-right: 20px;
+}
+b.last_title{
+    font: bold 18px "Consolas";
+    margin-right: 15px;
+    color: orangered;
+}
+b.last_title + span{
+    color: #d1d1d1 ;
+}
+span.song_name{
+    font: bold 14px "Microsoft YaHei";
+}
+.song_one td span{
+    margin-left: 8px;
+}
+table tr:nth-child(odd){
+    background: #f0f0f0;
+}
+table tr td:last-child{
+    text-align: center;
+}
+table tr i:hover{
+    color: orangered;
+    font-weight: bolder;
+    font-size: 17px;
+}
+div.table_size{
+    margin-right: 10px;
+    padding: 20px 0px;
+}
+table tr:hover{
+    background: ghostwhite;
+}
+.other_singer{
+    padding: 0px 10px;
+    width: 40%;
+    border-left: 1px solid  #e0e0e0;
+    margin-top: -10px;
+    margin-left: 60%;
+}
+#singer_album li{
+    float: left;
+    margin: 2px 13px 16px 13px;
+}
+
+.other_singer h3{
+    padding-top: 10px;
+    font: bold 17px "Microsoft YaHei";
+    margin-bottom: 20px;
+}
+#singer_album li img{
+    display: block;
+    margin-bottom: 8px;
+    height: 120px;
+    width: 120px;
+}
+p.introduce_word{
+    color: #8c8c8c;
+}
+.no_use_div{
+    height: 20px;
+    margin-top: 10px;
+    clear: both;
+}

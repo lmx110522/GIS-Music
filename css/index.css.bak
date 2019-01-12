@@ -1,0 +1,234 @@
+p#think_love{
+    margin: 5px 0px 0px 0px;
+    color: #6b6b6b;
+    font: bold 18px "microsoft yahei";
+}
+header#my_header {
+    margin-top: 1%;
+}
+.title_word{
+    color: #6b6b6b;
+    font: bold 18px "microsoft yahei";
+}
+p#think_love > span:last-child{
+    float: right;
+    margin-right: 20px;
+}
+#recommend_ul{
+    padding: 10px;
+    border-top: 1px solid #dad8d8;
+}
+#recommend_ul li{
+    border-radius: 5px;
+    float: left;
+    margin: 0px 12px 20px 12px;
+    box-shadow: grey 0px 1px 5px;
+}
+#show .img span img{
+    width: 960px;
+}
+#recommend_ul li > div{
+    padding: 10px;
+}
+#recommend_ul li img{
+    height: 170px;
+    width: 180px;
+}
+#recommend_ul li img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+.all_cate:after {
+    content: "";
+    display: block;
+    height: 500px;
+}
+
+p.song_name{
+    width: 180px;
+    text-align: center;
+    color: #6b6b6b;
+    font: bold 14px "Consolas";
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+ .recommend_icon{
+    margin-right: 5px;
+    color: #f00808;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#show .aside_msg{
+    position: absolute;
+    right: 12.5%;
+    top: 0px;
+    background: white;
+    height: 95%;
+    width: 12%;
+    padding: 10px;
+}
+#user_img{
+    border-radius: 50%;
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.aside_msg .aside_text p{
+    color: #f00808;
+    padding: 10px;
+}
+.aside_msg .aside_text span a{
+    margin-right: 5px;
+}
+.aside_msg .aside_text .aside_word{
+    font:  12px "microsoft yahei";
+}
+.aside_msg .new_song{
+    padding: 5px;
+    margin-top: 25%;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+.aside_msg .new_song div{
+    padding: 2px;
+}
+.aside_msg .new_song div> span .layui-icon{
+    font:  14px "microsoft yahei";
+}
+.aside_msg .new_song div:after{
+    content: "";
+    display: block;
+    height: 25px;
+}
+.aside_msg .new_song ul{
+    border-top: 1px solid #e2e2e2;
+    padding: 2px;
+}
+.aside_msg .new_song ul li:first-child{
+    font: bolder 14px "microsoft yahei";
+}
+.aside_msg .new_song ul li {
+    margin-top: 5px;
+}
+.aside_msg .new_song ul li a{
+    float: none !important;
+}
+.aside_msg .new_song div > span:first-child{
+    float: left;
+    color: #6b6b6b;
+    font:  16px "microsoft yahei";
+}
+
+.aside_msg .new_song div > span:last-child{
+    float: right;
+    font:  14px "microsoft yahei";
+    color: #6b6b6b;
+}
+.aside_msg  h3{
+    padding-top: 4px;
+    text-align: center;
+    font: bold 18px "Ink Free";
+}
+.aside_msg  h3:first-child{
+    border-top: 1px solid #e2e2e2;
+}
+#new_music_list li a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.singer_list #hot_list{
+    color: #6b6b6b;
+    border-bottom: 1px solid #e2e2e2;
+    font: bold 18px "microsoft yahei";
+}
+#hot_singer{
+    padding: 10px;
+}
+#hot_singer li{
+    float: left;
+    margin: 10px 13px;
+}
+#hot_singer li div img{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+#hot_singer li div{
+    perspective: 200px;
+
+}
+#hot_singer li div img:hover{
+    transform: rotateX(360deg);
+    transition: 2.5s;
+    transform-style: preserve-3d;
+}
+#hot_singer li div h4{
+    text-align: center;
+}
+#hot_list > span:last-child{
+    float: right;
+}
+#hot_singer li div h4{
+    width: 160px;
+    text-align: center;
+    color: #6b6b6b;
+    font: bold 14px "Consolas";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.my_content .rank_list{
+    float:left;
+    margin-right: 20px;
+    zoom: 1;
+    width: 75%;
+}
+.my_footer{
+    clear: both;
+}
+.all_cate ul li{
+    float: left;
+    margin: 17px;
+}
+.all_cate h3{
+    text-align: center;
+}
+.all_cate ul li img{
+    width: 50px;
+    display: block;
+    height: 50px;
+    border: 2px solid white;
+}
+.all_cate ul li a span{
+    text-align: center;
+}
+
+div.singer_list:after{
+    content: '';
+    display: block;
+    height: 200px;
+}
+.rank_list tr td{
+    text-align: center;
+}
+.rank_list tr td img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+.rank_list tr:not(#tr_head):hover  img{
+    display: block;
+}
+.rank_list tr:not(#tr_head):first-child img{
+    display: block;
+}

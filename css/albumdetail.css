@@ -1,0 +1,57 @@
+#singer_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#album_table{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+}
+.song_one> li{
+    margin: 20px 20px 20px 0px;
+}
+.song_one ul li{
+
+    float: left;
+    margin-right: 20px;
+}
+b.last_title{
+    font: bold 18px "Consolas";
+    margin-right: 15px;
+    color: orangered;
+}
+b.last_title + span{
+    color: #d1d1d1 ;
+}
+span.song_name{
+    font: bold 14px "Microsoft YaHei";
+}
+.song_one td span{
+    margin-left: 8px;
+}
+#album_table tr:nth-child(odd){
+    background: #f0f0f0;
+}
+#album_table tr td:last-child{
+    text-align: center;
+}
+table tr i:hover{
+    color: orangered;
+    font-weight: bolder;
+    font-size: 17px;
+}
+div.table_size{
+    margin-right: 10px;
+    padding: 20px 0px;
+}
+#album_table tr:hover{
+    background: ghostwhite;
+}
+.album_traduce{
+    border: 1px solid #f2f2f2;
+    margin: 20px 35px;
+    color: white;
+    background: linear-gradient(to right,orangered 30%,#FE2B6C 70%);
+    padding: 2px;
+}

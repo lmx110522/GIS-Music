@@ -1,0 +1,158 @@
+div.user_main_msg{
+    padding: 5% 3% 0px;
+}
+button.edit_msg{
+    background: #f6f6f6;
+    float: right;
+}
+div.user_other_msg{
+    margin-left: 23%;
+}
+button.edit_msg:hover{
+    border: 1px solid #C9C9C9;
+    background: white;
+}
+div.msg_top{
+    padding: 0px 10px 15px;
+    border-bottom: 1px solid #e9e8e8;
+}
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+    color: orangered;
+}
+div.msg_top i{
+    font: 500 28px "microsoft yahei";
+    color: orangered;
+}
+div.msg_top span{
+    margin-right: 20px;
+    font: 500 28px "microsoft yahei";
+}
+#headimg{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+}
+div.my_layui input,textarea{
+    width: 80% !important;
+}
+div.my_layui{
+    margin: 20px 10px;
+}
+.wait_edit{
+    border: none !important;
+    pointer-events: none;
+}
+.text-area{
+    overflow: auto;
+    line-height: 24px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    display: block;
+    resize: none;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100px;
+}
+div.phone{
+    padding-top: 5px;
+}
+.layui-form-label{
+    padding: 9px 8px !important;
+}
+div.last_listen{
+    float: right;
+    width: 49%;
+}
+div.last_save{
+    width: 49%;
+}
+.layui-word-aux a{
+    margin-left: 25px;
+}
+.layui-input-inline input.layui-input {
+    margin-left: 30px;
+}
+.song_one{
+    border: 1px solid #d1d1d1;
+}
+table{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-collapse: collapse;
+}
+.song_one> li{
+    margin: 20px 20px 20px 0px;
+}
+.song_one ul li{
+
+    float: left;
+    margin-right: 20px;
+}
+b.last_title{
+    font: bold 18px "Consolas";
+    margin-right: 15px;
+    color: orangered;
+}
+b.last_title + span{
+    color: #d1d1d1 ;
+}
+span.song_name{
+    font: bold 14px "Microsoft YaHei";
+}
+.song_one td span{
+    margin-left: 20px;
+}
+table tr:nth-child(odd){
+    background: #F7F7F7;
+}
+table tr td:nth-child(2){
+    text-align: center;
+}
+table tr td:last-child{
+    text-align: center;
+}
+table tr:first-child i{
+    color: orangered;
+    font-weight: bolder;
+    font-size: 17px;
+}
+div.table_size{
+    margin-right: 10px;
+    padding: 20px 0px;
+}
+table tr:hover{
+    background: ghostwhite;
+}
+
+.change_head{
+    display: none;
+    position: absolute;
+    left: 49px;
+    top: 58px;
+    width: 200px;
+    height: 200px;
+    z-index: 1000;
+}
+.change_head .change_bottom{
+    background: gainsboro;
+    width: 100%;
+    height: 100%;
+    z-index: 1010;
+    opacity: 0.6;
+    position: absolute;
+}
+.change_head  .change_top{
+    z-index: 1050;
+    position: absolute;
+    left: 36%;
+    top: 32%;
+}
+.change_head  .change_top i{
+    font: 50px "Consolas";
+    color: orangered;
+}

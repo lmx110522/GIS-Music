@@ -1,0 +1,32 @@
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background: #F5F5F5;
+    height: 100%;
+}
+header{
+    height: 10%;
+}
+section{
+    background: #143A38;
+    height: 50%;
+}
+header ul{
+    margin-top: 1%;
+}
+
+
+#login_img {
+    display: inline-block;
+
+    height: 100%;
+}
+.my_footer{
+    margin-top: 100px;
+}
+#logo_img{
+    width: 20%;
+}
