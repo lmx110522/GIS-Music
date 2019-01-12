@@ -10,6 +10,8 @@
 
 ![测试登录的页面](http://qiniuyun.lmxljc.xyz/gis%E9%9F%B3%E4%B9%90%E7%9B%92.gif "测试登录的页面")
 
+好像加载不出来这个页面，因为文件太大，所以，你还是[点我去查看](http://qiniuyun.lmxljc.xyz/gis%E9%9F%B3%E4%B9%90%E7%9B%92.gif "点我去查看")吧
+
 ### 首页
 ![首页](http://qiniuyun.lmxljc.xyz/music_index.png "首页")
 ### 所有歌手的页面
